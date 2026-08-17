@@ -1,11 +1,11 @@
-# WP FormsKit
+# Flint Forms
 
 A modern, lightweight WordPress form builder shipped in two editions:
 
 | Edition | Folder | Distribution |
 |---------|--------|--------------|
-| **WP FormsKit** (Free) | [`wp-formskit/`](./wp-formskit) | WordPress.org plugin directory |
-| **WP FormsKit Pro** (Pro) | [`wp-formskit-pro/`](./wp-formskit-pro) | Sold as a premium add-on |
+| **Flint Forms** (Free) | [`flint-forms/`](./flint-forms) | WordPress.org plugin directory |
+| **Flint Forms Pro** (Pro) | [`flint-forms-pro/`](./flint-forms-pro) | Sold as a premium add-on |
 
 The Pro edition is an **add-on** that requires the free plugin to be installed and
 active. It keeps **every free feature** and layers advanced functionality on top,
@@ -52,8 +52,8 @@ split. In short:
 
 **⬇️ One-click direct downloads** (pre-built, ready to upload to WordPress):
 
-- **WP FormsKit (Free):** [`downloads/wp-formskit.zip`](https://github.com/Towfique-Ahmed/WP-FormsKit/raw/main/downloads/wp-formskit.zip)
-- **WP FormsKit Pro:** [`downloads/wp-formskit-pro.zip`](https://github.com/Towfique-Ahmed/WP-FormsKit/raw/main/downloads/wp-formskit-pro.zip)
+- **Flint Forms (Free):** [`downloads/flint-forms.zip`](https://github.com/Towfique-Ahmed/WP-FormsKit/raw/main/downloads/flint-forms.zip)
+- **Flint Forms Pro:** [`downloads/flint-forms-pro.zip`](https://github.com/Towfique-Ahmed/WP-FormsKit/raw/main/downloads/flint-forms-pro.zip)
 
 Clicking either link downloads the installable ZIP straight away — no build step needed.
 
@@ -71,8 +71,8 @@ rather build fresh copies yourself, there are three other ways:
 This produces installable packages in `dist/`:
 
 ```
-dist/wp-formskit.zip           dist/wp-formskit-1.0.0.zip
-dist/wp-formskit-pro.zip       dist/wp-formskit-pro-1.0.0.zip
+dist/flint-forms.zip           dist/flint-forms-1.0.0.zip
+dist/flint-forms-pro.zip       dist/flint-forms-pro-1.0.0.zip
 ```
 
 (Requires the `zip` command — preinstalled on macOS/Linux; on Windows use WSL or Git Bash.)
@@ -80,7 +80,7 @@ dist/wp-formskit-pro.zip       dist/wp-formskit-pro-1.0.0.zip
 ### 2. Download from GitHub Actions
 
 Every push to `main` runs the **Build plugin packages** workflow. Open the latest
-run under the repo's **Actions** tab and download the `wp-formskit-plugins`
+run under the repo's **Actions** tab and download the `flint-forms-plugins`
 artifact — it contains both ZIPs.
 
 ### 3. Download from a Release
@@ -91,26 +91,26 @@ Tag a version and the ZIPs are attached to the GitHub Release automatically:
 git tag v1.0.0 && git push origin v1.0.0
 ```
 
-The release page will then list `wp-formskit-1.0.0.zip` and `wp-formskit-pro-1.0.0.zip`.
+The release page will then list `flint-forms-1.0.0.zip` and `flint-forms-pro-1.0.0.zip`.
 
 ## Install
 
 **In WordPress admin:**
 
 1. Go to **Plugins → Add New → Upload Plugin**.
-2. Upload `wp-formskit.zip` and click **Install Now**, then **Activate**.
-3. Repeat for `wp-formskit-pro.zip` (activate it *after* the free plugin).
-4. Build your first form under **FormsKit → Add New**.
+2. Upload `flint-forms.zip` and click **Install Now**, then **Activate**.
+3. Repeat for `flint-forms-pro.zip` (activate it *after* the free plugin).
+4. Build your first form under **Flint Forms → Add New**.
 
 **For local development**, you can instead copy (or symlink) the folders straight
 into `wp-content/plugins/`:
 
 ```
-wp-content/plugins/wp-formskit/
-wp-content/plugins/wp-formskit-pro/
+wp-content/plugins/flint-forms/
+wp-content/plugins/flint-forms-pro/
 ```
 
-Activate **WP FormsKit** first, then **WP FormsKit Pro**.
+Activate **Flint Forms** first, then **Flint Forms Pro**.
 
 ## Requirements
 

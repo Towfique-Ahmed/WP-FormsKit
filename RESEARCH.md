@@ -1,6 +1,6 @@
 # Market Research — WordPress Form Plugins (2026)
 
-Research conducted to inform the free/pro feature split for **WP FormsKit**.
+Research conducted to inform the free/pro feature split for **Flint Forms**.
 
 ## Landscape of leading plugins
 
@@ -12,15 +12,15 @@ Research conducted to inform the free/pro feature split for **WP FormsKit**.
 | **Ninja Forms** | Modular add-ons | Core builder, calculations, repeater fields | Each feature (payments, CRM, conditional logic, file upload, multi-step) is a separate paid add-on |
 | **Forminator** | Freemium | Multi-step, progress bars, Stripe/PayPal, quizzes/polls free | Higher limits, premium integrations, add-ons |
 
-## Key takeaways that shaped WP FormsKit
+## Key takeaways that shaped Flint Forms
 
 1. **Give the free tier real utility.** The strongest-reviewed free plugins
    (Fluent Forms, Forminator) include entry storage and notifications for free.
    Plugins that gate storage (Ninja Forms core, WPForms Lite) draw the most
-   criticism. → **WP FormsKit Free stores entries and sends notifications.**
+   criticism. → **Flint Forms Free stores entries and sends notifications.**
 
 2. **Performance is a differentiator.** Fluent Forms and Bit Form win on speed by
-   staying lightweight and loading assets conditionally. → **WP FormsKit enqueues
+   staying lightweight and loading assets conditionally. → **Flint Forms enqueues
    CSS/JS only on pages that actually render a form.**
 
 3. **Spam protection should not be a paid feature.** Baseline anti-spam is
@@ -28,7 +28,7 @@ Research conducted to inform the free/pro feature split for **WP FormsKit**.
    are Pro.
 
 4. **Conditional logic, multi-step, file upload and payments are the classic Pro
-   line.** Every premium plugin monetizes these. → **WP FormsKit Pro** owns them.
+   line.** Every premium plugin monetizes these. → **Flint Forms Pro** owns them.
 
 5. **An add-on architecture beats a forked codebase.** Rather than shipping two
    diverging plugins, the free plugin exposes a stable hook API and Pro is a thin
@@ -37,7 +37,7 @@ Research conducted to inform the free/pro feature split for **WP FormsKit**.
 
 ## Chosen positioning
 
-> **WP FormsKit** — "The fast, honest form builder. A free tier you can actually
+> **Flint Forms** — "The fast, honest form builder. A free tier you can actually
 > ship with, and a Pro that only adds power — never takes features away."
 
 ## Sources

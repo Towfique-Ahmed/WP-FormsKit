@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# Build installable ZIP packages for the WP FormsKit plugins.
+# Build installable ZIP packages for the Flint Forms plugins.
 #
-# Each ZIP contains the plugin directory at its root (e.g. wp-formskit/…),
+# Each ZIP contains the plugin directory at its root (e.g. flint-forms/…),
 # which is exactly what "Plugins → Add New → Upload Plugin" expects in
 # WordPress. Output lands in ./dist.
 #
@@ -16,8 +16,8 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DIST_DIR="${ROOT_DIR}/dist"
 
-FREE_SLUG="wp-formskit"
-PRO_SLUG="wp-formskit-pro"
+FREE_SLUG="flint-forms"
+PRO_SLUG="flint-forms-pro"
 
 # Path suffixes that should never ship inside a distributable ZIP. These are
 # anchored to the plugin slug at package time (see build_plugin).

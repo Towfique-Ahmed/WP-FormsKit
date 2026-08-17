@@ -29,7 +29,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: wp-formskit-plugins
+          name: flint-forms-plugins
           path: dist/*.zip
           if-no-files-found: error
 
@@ -38,4 +38,4 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            dist/wp-formskit-*.zip
+            dist/flint-forms-*.zip
