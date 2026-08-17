@@ -1,0 +1,202 @@
+/* WP FormsKit — front-end styles */
+.formskit-wrap {
+	--formskit-accent: #2563eb;
+	--formskit-border: #d5dae2;
+	--formskit-error: #dc2626;
+	--formskit-radius: 8px;
+	max-width: 100%;
+}
+
+.formskit-form .formskit-fields {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+	margin: 0 0 18px;
+}
+
+.formskit-field {
+	flex: 1 1 100%;
+	min-width: 0;
+}
+.formskit-width-half {
+	flex: 1 1 calc(50% - 9px);
+}
+.formskit-width-third {
+	flex: 1 1 calc(33.333% - 12px);
+}
+
+.formskit-label {
+	display: block;
+	font-weight: 600;
+	margin: 0 0 6px;
+	line-height: 1.3;
+}
+.formskit-required-mark {
+	color: var(--formskit-error);
+	margin-left: 2px;
+}
+
+.formskit-input,
+.formskit-control input[type="text"],
+.formskit-control input[type="email"],
+.formskit-control input[type="url"],
+.formskit-control input[type="tel"],
+.formskit-control input[type="number"],
+.formskit-control input[type="date"],
+.formskit-control input[type="password"],
+.formskit-control textarea,
+.formskit-control select {
+	width: 100%;
+	padding: 11px 13px;
+	border: 1px solid var(--formskit-border);
+	border-radius: var(--formskit-radius);
+	font-size: 15px;
+	line-height: 1.4;
+	background: #fff;
+	color: #1f2733;
+	box-sizing: border-box;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.formskit-control textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+.formskit-input:focus,
+.formskit-control textarea:focus,
+.formskit-control select:focus {
+	outline: none;
+	border-color: var(--formskit-accent);
+	box-shadow: 0 0 0 3px rgba( 37, 99, 235, 0.15 );
+}
+
+.formskit-choices {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.formskit-choice {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.formskit-description {
+	margin: 6px 0 0;
+	font-size: 13px;
+	color: #6b7280;
+}
+
+.formskit-field-error {
+	display: none;
+	color: var(--formskit-error);
+	font-size: 13px;
+	margin-top: 6px;
+}
+.formskit-has-error .formskit-field-error {
+	display: block;
+}
+.formskit-has-error .formskit-input,
+.formskit-has-error textarea,
+.formskit-has-error select {
+	border-color: var(--formskit-error);
+}
+
+.formskit-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.formskit-submit {
+	background: var(--formskit-accent);
+	color: #fff;
+	border: none;
+	border-radius: var(--formskit-radius);
+	padding: 12px 26px;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: filter 0.15s ease;
+}
+.formskit-submit:hover {
+	filter: brightness( 0.94 );
+}
+.formskit-submit:disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+
+.formskit-submitting .formskit-spinner {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 2px solid rgba( 0, 0, 0, 0.15 );
+	border-top-color: var(--formskit-accent);
+	border-radius: 50%;
+	animation: formskit-spin 0.7s linear infinite;
+}
+@keyframes formskit-spin {
+	to {
+		transform: rotate( 360deg );
+	}
+}
+
+.formskit-message {
+	margin-top: 14px;
+	display: none;
+}
+.formskit-message-error {
+	display: block;
+	color: var(--formskit-error);
+	background: #fef2f2;
+	border: 1px solid #fecaca;
+	border-radius: var(--formskit-radius);
+	padding: 12px 14px;
+}
+.formskit-success {
+	background: #ecfdf5;
+	border: 1px solid #a7f3d0;
+	color: #065f46;
+	border-radius: var(--formskit-radius);
+	padding: 16px 18px;
+}
+.formskit-notice {
+	background: #fffbeb;
+	border: 1px solid #fde68a;
+	padding: 10px 14px;
+	border-radius: var(--formskit-radius);
+}
+
+/* Pro: multi-step progress + steps (styles live here so free degrades gracefully). */
+.formskit-steps > .formskit-step {
+	display: none;
+}
+.formskit-steps > .formskit-step.is-active {
+	display: block;
+}
+.formskit-progress {
+	display: flex;
+	gap: 6px;
+	margin-bottom: 20px;
+}
+.formskit-progress-bar {
+	flex: 1;
+	height: 6px;
+	background: var(--formskit-border);
+	border-radius: 3px;
+	overflow: hidden;
+}
+.formskit-progress-fill {
+	height: 100%;
+	background: var(--formskit-accent);
+	width: 0;
+	transition: width 0.3s ease;
+}
+
+@media ( max-width: 600px ) {
+	.formskit-width-half,
+	.formskit-width-third {
+		flex: 1 1 100%;
+	}
+}

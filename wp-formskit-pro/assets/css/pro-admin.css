@@ -1,0 +1,43 @@
+/* WP FormsKit Pro — admin/builder styles */
+
+.formskit-conditional-box {
+	margin-top: 10px;
+}
+.formskit-conditional-box hr {
+	margin: 12px 0;
+}
+.formskit-cond-config {
+	background: #f6f7f9;
+	border: 1px solid #e2e4e9;
+	border-radius: 8px;
+	padding: 12px 14px;
+}
+.formskit-cond-rule {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+	flex-wrap: wrap;
+}
+.formskit-cond-rule select,
+.formskit-cond-rule input {
+	max-width: 180px;
+}
+.formskit-cond-remove {
+	color: #dc2626 !important;
+	font-size: 16px !important;
+	text-decoration: none !important;
+}
+.formskit-cond-add {
+	margin-top: 6px;
+}
+
+.formskit-field-type-badge {
+	position: relative;
+}
+
+/* Pro badge already styled in free admin.css; ensure pro palette items read well */
+.formskit-palette-item.is-pro:hover {
+	border-color: #f59e0b;
+	background: #fffbeb;
+}

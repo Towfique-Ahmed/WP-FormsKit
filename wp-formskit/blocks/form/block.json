@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "formskit/form",
+	"title": "WP FormsKit Form",
+	"category": "widgets",
+	"icon": "feedback",
+	"description": "Embed a WP FormsKit form.",
+	"keywords": [ "form", "contact", "formskit" ],
+	"textdomain": "wp-formskit",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"attributes": {
+		"formId": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"editorScript": "formskit-block-editor"
+}
