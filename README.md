@@ -50,8 +50,15 @@ split. In short:
 
 ## Download
 
-You install a WordPress plugin as a **ZIP file**, not as a raw folder. There are
-three ways to get the ZIPs:
+**⬇️ One-click direct downloads** (pre-built, ready to upload to WordPress):
+
+- **WP FormsKit (Free):** [`downloads/wp-formskit.zip`](https://github.com/Towfique-Ahmed/WP-FormsKit/raw/main/downloads/wp-formskit.zip)
+- **WP FormsKit Pro:** [`downloads/wp-formskit-pro.zip`](https://github.com/Towfique-Ahmed/WP-FormsKit/raw/main/downloads/wp-formskit-pro.zip)
+
+Clicking either link downloads the installable ZIP straight away — no build step needed.
+
+You install a WordPress plugin as a **ZIP file**, not as a raw folder. If you'd
+rather build fresh copies yourself, there are three other ways:
 
 ### 1. Build them yourself (recommended)
 
